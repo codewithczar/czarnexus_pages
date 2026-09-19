@@ -350,6 +350,11 @@ textarea {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.portfolio-section {
+  background: rgba(255, 255, 255, 0.014);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
 .muted-section {
   background: rgba(255, 255, 255, 0.015);
 }
@@ -431,53 +436,99 @@ textarea {
 }
 
 .portfolio-grid {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
-.placeholder-image {
-  height: 260px;
+.portfolio-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(215, 181, 122, 0.5);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.portfolio-image {
   position: relative;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(215, 181, 122, 0.14));
+  height: 280px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(215, 181, 122, 0.16));
 }
 
-.placeholder-image::before {
+.portfolio-image::before {
   content: "";
   position: absolute;
-  inset: 20px 26px auto auto;
+  inset: 20px 22px auto auto;
   width: 42%;
   height: 68%;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  background: linear-gradient(180deg, transparent, rgba(8, 9, 12, 0.9));
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-overlay span {
+  color: var(--gold-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+}
+
+.portfolio-overlay strong {
+  font-size: 1.3rem;
 }
 
 .image-one {
-  background: linear-gradient(135deg, rgba(205, 169, 105, 0.18), rgba(17, 17, 18, 0.6));
+  background: linear-gradient(135deg, rgba(205, 169, 105, 0.16), rgba(17, 17, 18, 0.75));
 }
 
 .image-two {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(97, 111, 129, 0.2));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(88, 104, 125, 0.3));
 }
 
 .image-three {
-  background: linear-gradient(135deg, rgba(201, 171, 122, 0.12), rgba(32, 39, 47, 0.7));
+  background: linear-gradient(135deg, rgba(201, 171, 122, 0.14), rgba(32, 39, 47, 0.8));
 }
 
 .portfolio-copy {
-  padding: 20px 22px 24px;
-}
-
-.portfolio-copy span {
-  display: block;
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+  padding: 22px 22px 26px;
 }
 
 .portfolio-copy h3 {
-  margin: 0;
+  margin: 0 0 10px;
   font-size: 1.6rem;
+}
+
+.portfolio-copy p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .testimonial-grid {
