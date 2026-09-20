@@ -58,6 +58,7 @@ czarnexus_pages/
 ### Repository
 
 - Project repo: `czarnexus_pages`
+- GitHub URL: `https://github.com/codewithczar/czarnexus_pages`
 - Production URL: `https://czarnexus.vercel.app`
 
 ## Branching Governance
@@ -88,12 +89,13 @@ feature/<name> -> develop -> main
 ### Repository Reference
 
 Repository name: `czarnexus_pages`
+GitHub URL: `https://github.com/codewithczar/czarnexus_pages`
 Default branch: `develop`
 
 Example remote URL:
 
 ```bash
-git remote add origin https://github.com/your-org/czarnexus_pages.git
+git remote add origin https://github.com/codewithczar/czarnexus_pages.git
 ```
 
 ## Contribution Standards

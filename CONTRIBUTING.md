@@ -24,7 +24,7 @@
 - PRs should target `develop` first.
 - Once tested and approved, `develop` is merged into `main`.
 - Keep PRs focused on a single feature or fix when possible.
-- Repository reference: `https://github.com/your-org/czarnexus_pages`
+- Repository reference: `https://github.com/codewithczar/czarnexus_pages`
 - Production deployment URL: `https://czarnexus.vercel.app`
 
 ## Pull Request Checklist

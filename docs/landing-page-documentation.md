@@ -68,7 +68,7 @@ git push origin main
 Repository reference:
 
 ```bash
-git remote add origin https://github.com/your-org/czarnexus_pages.git
+git remote add origin https://github.com/codewithczar/czarnexus_pages.git
 ```
 
 Production deployment:
