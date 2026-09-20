@@ -41,7 +41,7 @@ The project is planned in three phases:
 ## Project Structure
 
 ```text
-zcarnexus_static_page/
+czarnexus_pages/
 ├── README.md
 ├── docs/
 │   ├── design-notes.md
@@ -54,6 +54,11 @@ zcarnexus_static_page/
 │   └── images/
 └── .gitignore
 ```
+
+### Repository
+
+- Project repo: `czarnexus_pages`
+- Production URL: `https://czarnexus.vercel.app`
 
 ## Branching Governance
 
@@ -79,6 +84,17 @@ feature/<name> -> develop -> main
 4. Review and approve changes
 5. Merge into `develop` for integration testing
 6. Merge `develop` into `main` when the release is approved
+
+### Repository Reference
+
+Repository name: `czarnexus_pages`
+Default branch: `develop`
+
+Example remote URL:
+
+```bash
+git remote add origin https://github.com/your-org/czarnexus_pages.git
+```
 
 ## Contribution Standards
 
@@ -114,10 +130,11 @@ http://localhost:8000
 
 ### Phase 1: Static Site Deployment
 
-For the HTML/CSS version, deployment should be handled through GitHub Pages for a simple and low-cost static hosting setup.
+For the HTML/CSS version, deployment should be handled through Vercel for a simple production setup.
 
+- Production site: `https://czarnexus.vercel.app`
 - Push merged changes to `main`
-- Deploy the static site using GitHub Pages
+- Vercel auto-deploys production updates from `main`
 - Keep the site optimized for speed, responsiveness, and polish
 
 ### Phase 2: Frontend + Backend Deployment
