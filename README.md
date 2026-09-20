@@ -1,10 +1,10 @@
-# Z Carnexus Static Agency Website
+# czarnexus
 
 A premium creative agency website concept inspired by the polished, conversion-focused aesthetic of Golden Launch Creative. The project is designed to present a modern brand story, clearly communicate service value, and build trust with a refined digital experience.
 
 ## Project Overview
 
-Z Carnexus is a creative agency landing page project focused on premium design, strategic messaging, and digital growth. The site is structured to reflect a high-end agency brand and lead visitors toward action through a clean visual system, persuasive copy, and strong conversion points.
+czarnexus is a creative agency landing page project focused on premium design, strategic messaging, and digital growth. The site is structured to reflect a high-end agency brand and lead visitors toward action through a clean visual system, persuasive copy, and strong conversion points.
 
 The project is planned in three phases:
 
@@ -41,7 +41,7 @@ The project is planned in three phases:
 ## Project Structure
 
 ```text
-zcarnexus_static_page/
+czarnexus_pages/
 ├── README.md
 ├── docs/
 │   ├── design-notes.md
@@ -54,6 +54,12 @@ zcarnexus_static_page/
 │   └── images/
 └── .gitignore
 ```
+
+### Repository
+
+- Project repo: `czarnexus_pages`
+- GitHub URL: `https://github.com/codewithczar/czarnexus_pages`
+- Production URL: `https://czarnexus.vercel.app`
 
 ## Branching Governance
 
@@ -79,6 +85,23 @@ feature/<name> -> develop -> main
 4. Review and approve changes
 5. Merge into `develop` for integration testing
 6. Merge `develop` into `main` when the release is approved
+
+> `develop` is the default branch for active work and PR targets.
+
+### Repository Reference
+
+Project name: `czarnexus`
+Repository: `https://github.com/codewithczar/czarnexus_pages`
+Default branch: `develop`
+Production URL: `https://czarnexus.vercel.app`
+
+Clone the repository:
+
+```bash
+git clone https://github.com/codewithczar/czarnexus_pages.git
+cd czarnexus_pages
+git checkout develop
+```
 
 ## Contribution Standards
 
@@ -114,10 +137,11 @@ http://localhost:8000
 
 ### Phase 1: Static Site Deployment
 
-For the HTML/CSS version, deployment should be handled through GitHub Pages for a simple and low-cost static hosting setup.
+For the HTML/CSS version, deployment should be handled through Vercel for a simple production setup.
 
+- Production site: `https://czarnexus.vercel.app`
 - Push merged changes to `main`
-- Deploy the static site using GitHub Pages
+- Vercel auto-deploys production updates from `main`
 - Keep the site optimized for speed, responsiveness, and polish
 
 ### Phase 2: Frontend + Backend Deployment
@@ -162,8 +186,8 @@ The UI should emphasize clear hierarchy, polished spacing, elegant typography, a
 
 ## Notes
 
-This README acts as the initial project governance and delivery guide for the Z Carnexus marketing site. It should be updated as the project evolves through each development phase.
+This README acts as the initial project governance and delivery guide for the czarnexus marketing site. It should be updated as the project evolves through each development phase.
 
 ---
 
-Maintained for the Z Carnexus static agency website project.
+Maintained for the czarnexus static agency website project.
