@@ -1,11 +1,11 @@
-# Carnexus Landing Page Documentation
+# czarnexus Landing Page Documentation
 
 ## Overview
-Carnexus is a premium creative agency website designed for modern brands.  
+czarnexus is a premium creative agency website designed for modern brands.  
 The landing page emphasizes creative strategy, premium design, and conversion growth through a sleek, dark-themed layout with gold and white accents.
 
 ## Header
-- Logo: Gold circle with “Z” followed by “Carnexus”
+- Logo: Gold circle with “Z” followed by “czarnexus”
 - Navigation: Services | Work | Testimonials | Contact
 - CTA Button: “Book a Call” (gold, top-right)
 
@@ -28,13 +28,15 @@ The landing page emphasizes creative strategy, premium design, and conversion gr
 - Mood: Luxury, confidence, and conversion-focused design
 
 ## Purpose
-This page serves as the hero landing section for Carnexus — showcasing brand identity, value proposition, and immediate call-to-action for client engagement.
+This page serves as the hero landing section for czarnexus — showcasing brand identity, value proposition, and immediate call-to-action for client engagement.
 
 # Git Branching Workflow
 
 ## Permanent Branches
 - `main` → production branch; stable and auto-deployed to Vercel
-- `develop` → staging branch; used for integration and testing
+- `develop` → default branch for active work, staging, and testing
+
+> In this repository, `develop` is the default branch for PRs and day-to-day development.
 
 ## Feature Branches
 - Always create feature branches from `develop`
@@ -68,7 +70,9 @@ git push origin main
 Repository reference:
 
 ```bash
-git remote add origin https://github.com/codewithczar/czarnexus_pages.git
+git clone https://github.com/codewithczar/czarnexus_pages.git
+cd czarnexus_pages
+git checkout develop
 ```
 
 Production deployment:

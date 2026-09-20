@@ -10,6 +10,7 @@
 - Always create feature branches from `develop`
 - Example: `feature/testimonials-section`
 - Merge path: `feature/*` → `develop` → `main`
+- `develop` is the default branch for all new work and pull requests
 
 ## First-Time Contributor Setup
 
@@ -25,6 +26,7 @@
 - Once tested and approved, `develop` is merged into `main`.
 - Keep PRs focused on a single feature or fix when possible.
 - Repository reference: `https://github.com/codewithczar/czarnexus_pages`
+- Default branch: `develop`
 - Production deployment URL: `https://czarnexus.vercel.app`
 
 ## Pull Request Checklist
