@@ -218,16 +218,62 @@
 
       <section id="contact" class="section cta-section">
         <div class="container cta-box">
-          <div>
+          <div class="contact-intro">
             <p class="eyebrow">Let’s build your next launch</p>
             <h2>Ready to turn your vision into a premium digital presence?</h2>
+            <p class="contact-copy">
+              Tell us what you are building, and we will get back to you with the next best step.
+            </p>
+
+            <div class="contact-actions" aria-label="Alternative contact options">
+              <a
+                class="btn btn-secondary"
+                href="https://forms.gle/bfufghogAuG9qbCe8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fill Google Form
+              </a>
+              <a class="btn btn-secondary" href="mailto:czarnexus26@gmail.com">Email Us</a>
+              <a
+                class="btn btn-secondary"
+                href="https://wa.me/9009600026"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
           </div>
 
-          <form class="contact-form">
-            <input type="text" placeholder="Your name" aria-label="Your name" />
-            <input type="email" placeholder="Email address" aria-label="Email address" />
-            <textarea placeholder="Tell us about your project" aria-label="Project details"></textarea>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xeajrnrw"
+            method="POST"
+          >
+            <label for="contact-name">Name</label>
+            <input id="contact-name" type="text" name="name" placeholder="Your name" required />
+
+            <label for="contact-email">Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
+
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your project"
+              required
+            ></textarea>
+
             <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            <p class="contact-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -238,7 +284,7 @@
         <div>
           <div class="brand brand-footer" aria-label="czarnexus footer brand">
             <span class="brand-mark">Z</span>
-            <span class="brand-text">Carnexus</span>
+            <span class="brand-text">cZarnexus</span>
           </div>
           <p>Creative strategy for ambitious brands.</p>
         </div>
